@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.canvas {
+  width: 100%;
+  height: 100vh;
+  /* background: #000; */
+  overflow: hidden;
+  /* cursor: crosshair; */
+  cursor: url(https://user-images.githubusercontent.com/107534043/221851846-ee7d6a32-379e-4ddd-b33e-3c3b855d7dcd.jpg),
+    auto;
+}
+.canvas canvas {
+  /* border: 1px solid red; */
+}
+.colorPicker {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.clear {
+  border: 1px solid gray;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 80px;
+  text-align: center;
+  transition: ease-in 0.3s;
+  color: teal;
+  font-size: 20px;
+}
+.clear:hover {
+  letter-spacing: 2px;
+}
