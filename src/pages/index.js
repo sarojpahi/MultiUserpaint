@@ -1,5 +1,5 @@
+import DrawingCanvas from "@/Components/Canvas";
 import Head from "next/head";
-import DrawingApp from "../Components/Draw";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <DrawingApp />
+        <DrawingCanvas />
       </main>
     </>
   );
