@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || process.env.BASE_URL;
 const DrawingCanvas = () => {
   const [socket, setSocket] = useState(null);
   const canvasRef = useRef(null);
